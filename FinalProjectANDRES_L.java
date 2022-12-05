@@ -930,11 +930,10 @@ public class FinalProjectANDRES_L {
 						loop2 = input.next() .toUpperCase();
 						}while(loop2.equals("Y"));
 					
-
+default:
 					System.out.println("Try again? Y/N");
 					loop1 = input.next() .toUpperCase();
 				}while(loop1.equals("Y"));
-	
 	
 		System.out.println("Try again? Y/N");
 		loop = input.next() .toUpperCase();
