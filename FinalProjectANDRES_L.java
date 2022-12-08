@@ -4,11 +4,9 @@ public class FinalProjectANDRES_L {
 		Scanner input = new Scanner (System.in);
 		String loop, loop3;
 			String name;
-
-			System.out.println("Welcome");
+			System.out.println("Welcome!");
 			System.out.print("Enter nickname: ");
 			name = input.next();
-			System.out.println("\u000C");
 			System.out.println(" ");
 			System.out.println(" ");
 			System.out.println("Hello, " + name + "!");
@@ -23,13 +21,13 @@ public class FinalProjectANDRES_L {
 				System.out.println(" ");
 				System.out.println("Please select number");
 				System.out.println(" ");
-				System.out.println("1------- Printing");
-				System.out.println("2------- Data Types, Variable and Operators");
-				System.out.println("3------- Getting Data From Keyboard");
-				System.out.println("4------- Control Structure");
-				System.out.println("5------- Control Strucuture (Switch)");
-				System.out.println("6------- Repetition Control Structure");
-				System.out.println("7------- Quit");
+				System.out.println("[1]-------> Printing");
+				System.out.println("[2]-------> Data Types, Variable and Operators");
+				System.out.println("[3]-------> Getting Data From Keyboard");
+				System.out.println("[4]-------> Control Structure");
+				System.out.println("[5]-------> Control Structure (Switch)");
+				System.out.println("[6]-------> Repetition Control Structure");
+				System.out.println("[7]-------> Quit");
 				System.out.println(" ");
 				System.out.print("Enter selected number: ");
 				group = input.nextInt();
@@ -37,36 +35,25 @@ public class FinalProjectANDRES_L {
 				System.out.println(" ");
 				System.out.println("================================================================");
 				
-		
-			switch(group){
-				case 7:
-				
-					System.out.println("Do you want to quit?");
-					System.out.println("Press Y to exit");
-					System.out.println("Press N to go back");
-					loop = input.next().toUpperCase();
-					if(loop.equals("Y")) {
-						System.out.print("Thank you!");
-						System.exit(0);
-					}
 
-				break;
-				
+
+			
+				switch(group) {
 				case 1: 
 					do{ //printing
-					int options;
-					boolean xx = false;
+					String options;
 					System.out.println(" ");
-					System.out.println("Please select number ");
+					System.out.println("Please select letter");
 					System.out.println(" ");
-					System.out.println("1------- Slumbook");
-					System.out.println("2------- FaceTime");
-					System.out.println("3------- DreamHouse");
-					System.out.print("Enter selected number: ");
-					options = input.nextInt();	
+					System.out.println("[A]-------> Slumbook");
+					System.out.println("[B]-------> FaceTime");
+					System.out.println("[C]-------> DreamHouse");
+					System.out.println("[D]-------> Return to other groups");
+					System.out.print("Enter letter: ");
+					options = input.next().toUpperCase();	
 					switch(options){
 					
-					case 1:
+					case "A":
 						System.out.println(" ");
 						System.out.println("Slumbook");
 						System.out.println(" ");
@@ -90,7 +77,7 @@ public class FinalProjectANDRES_L {
 											
 					break;
 					
-					case 2:
+					case "B":
 						System.out.println(" ");
 						System.out.println("FaceTime");
 						System.out.println(" ");
@@ -127,7 +114,7 @@ public class FinalProjectANDRES_L {
 						
 						break;
 						
-					case 3:
+					case "C":
 						
 						System.out.println(" ");
 						System.out.println("DreamHouse");
@@ -139,7 +126,9 @@ public class FinalProjectANDRES_L {
 						System.out.println("´´ ̛ ̛ ´´ ´´ ´´ ̛ ̛ ´´ ´´ ´´ ̛ ̛ ´´ ´´");
 						System.out.println(" ");
 						break;
+					case "D":
 						
+						break;
 		
 					default:
 						System.out.println("Invalid");
@@ -147,28 +136,31 @@ public class FinalProjectANDRES_L {
 			
 					}System.out.println("================================================================");
 					
-					System.out.println("do you want to stay in this group? Y/N");
+					System.out.println("do you want to leave in [Printing]? Y/N");
+					System.out.println("Press Y to Leave");
+					System.out.println("Press N to Stay");
 					loop2 = input.next() .toUpperCase();
-				}while(loop2.equals("Y"));
+				}while(loop2.equals("N"));
 					break;
 					
 				case 2: //Data Types
 				do {
-						int options;
+						String options;
 						System.out.println("Data Types");
 						System.out.println(" ");
-						System.out.println("Please select");
+						System.out.println("Please select letter");
 						System.out.println(" ");
-						System.out.println("1------- AreaofATriangle");
-						System.out.println("2------- CelsiusToFahrenheit ");
-						System.out.println("3------- Grade Average");
-						System.out.println("4------- MultiplyToFifteen");
-						System.out.print("Enter selected number: ");
+						System.out.println("[A]-------> AreaofATriangle");
+						System.out.println("[B]-------> CelsiusToFahrenheit ");
+						System.out.println("[C]-------> Grade Average");
+						System.out.println("[D]-------> MultiplyToFifteen");
+						System.out.println("[E]-------> Return to other groups");
+						System.out.print("Enter selected letter: ");
 						System.out.println(" ");
-						options = input.nextInt();	
+						options = input.next().toUpperCase();	
 						switch(options){
 						
-						case 1:
+						case "A":
 							System.out.println(" ");
 							System.out.println("AreaofATriangle");
 							System.out.println(" ");
@@ -180,7 +172,7 @@ public class FinalProjectANDRES_L {
 							
 							System.out.println("Area of a Triangle is: " + product +"cm²"); 					
 						break;
-						case 2:
+						case "B":
 							System.out.println(" ");
 							System.out.println("CelsiusToFahrenheit");
 							System.out.println(" ");
@@ -192,7 +184,7 @@ public class FinalProjectANDRES_L {
 							System.out.println("Fahrenheit = "+ product1 + "°F");
 							break;
 							
-						case 3:
+						case "C":
 							System.out.println(" ");
 							System.out.println("GradeAverage");
 							System.out.println(" ");
@@ -209,7 +201,7 @@ public class FinalProjectANDRES_L {
 	
 							break;
 							
-						case 4:
+						case "D":
 							System.out.println(" ");
 							System.out.println("MultiplytoFifteen");
 							System.out.println(" ");
@@ -235,32 +227,41 @@ public class FinalProjectANDRES_L {
 							System.out.println("8 times 15 = " + num8);
 							System.out.println("9 times 15 = " + num9);
 							System.out.println("10 times 15 = "+ num0);
+							break;
+							
+						case "E":
+						
+						break;
 						default:
 							System.out.println("Invalid");
 						       break;
 						
 						}System.out.println("================================================================");
 						
-						System.out.println("do you want to stay in this group? Y/N");
+						System.out.println("do you want to leave [Data Types, Variable and Operators]? Y/N");
+						System.out.println("Press Y to Leave");
+						System.out.println("Press N to Stay");
 						loop2 = input.next() .toUpperCase();
-					}while(loop2.equals("Y"));
+					}while(loop2.equals("N"));
 						break;
 						
 				case 3:
 					do{//Getting Data From Keyboard
 						
-					int options3;
+					String options3;
 					System.out.println(" ");
 					System.out.println("Getting Data From Keyboard ");
-					System.out.println("Please select");
 					System.out.println(" ");
-					System.out.println("1------- Slumbook2");
-					System.out.println("2------- Arithmetic");
-					System.out.print("Enter selected number: ");
-					options3 = input.nextInt();	
+					System.out.println("Please select letter");
+					System.out.println(" ");
+					System.out.println("[A]-------> Slumbook2");
+					System.out.println("[B]-------> Arithmetic");
+					System.out.println("[C]-------> Return to other groups");
+					System.out.print("Enter letter: ");
+					options3 = input.next().toUpperCase();	
 					switch(options3){
 					
-					case 1:
+					case "A":
 						System.out.println(" ");
 						System.out.println("Slumbook2");
 						System.out.println(" ");
@@ -324,7 +325,7 @@ public class FinalProjectANDRES_L {
 						Describe = input.next();
 					break;
 					
-					case 2:
+					case "B":
 						System.out.println(" ");
 						System.out.println("Arithmetic");
 						System.out.println(" ");
@@ -349,6 +350,10 @@ public class FinalProjectANDRES_L {
 						System.out.println("Quotient = " + Quotient);
 						System.out.println("Modulo = " + Modulo);
 					break;
+					
+					case "C":
+						
+						break;
 
 					default:
 						System.out.println("Invalid");
@@ -356,28 +361,31 @@ public class FinalProjectANDRES_L {
 					       break;
 					}System.out.println("================================================================");
 					
-					System.out.println("do you want to stay in this group? Y/N");
+					System.out.println("do you want to leave [Getting Data From Keyboard]? Y/N");
+					System.out.println("Press Y to Leave");
+					System.out.println("Press N to Stay");
 					loop2 = input.next() .toUpperCase();
-				}while(loop2.equals("Y"));
+				}while(loop2.equals("N"));
 					
 					break;
 				case 4: // Control Structure
 					do {
 					
-					int options4;
+					String options4;
 					System.out.println(" ");
 					System.out.println("Control Structure");
 					System.out.println(" ");
-					System.out.println("Please select");
+					System.out.println("Please select letter");
 					System.out.println(" ");
-					System.out.println("1------- QuetelexIndex");
-					System.out.println("2------- HuttValleyEnergy");
-					System.out.println("3------- FuelPrice");
-					System.out.print("Enter selected number: ");
-					options4 = input.nextInt();	
+					System.out.println("[A]-------> QuetelexIndex");
+					System.out.println("[B]-------> HuttValleyEnergy");
+					System.out.println("[C]-------> FuelPrice");
+					System.out.println("[D]-------> Return to other groups");
+					System.out.print("Enter letter: ");
+					options4 = input.next().toUpperCase();	
 					switch(options4){
 					
-					case 1:
+					case "A":
 						double kilos; //weight
 						double height; //height
 						System.out.println(" ");
@@ -410,7 +418,7 @@ public class FinalProjectANDRES_L {
 						} 
 					break;
 					
-					case 2:
+					case "B":
 						double kilo;
 						double totalCost = 0;
 						System.out.println(" ");
@@ -435,7 +443,7 @@ public class FinalProjectANDRES_L {
 
 						break;
 						
-					case 3:
+					case "C":
 						double liters;
 						int selection;
 						double cost = 0;
@@ -481,6 +489,12 @@ public class FinalProjectANDRES_L {
 						
 						
 						System.out.print("Total Cost: " + cost);
+						
+						break;
+						
+					case "D":
+						
+						break;
 
 					default:
 						System.out.println("Invalid");
@@ -488,27 +502,31 @@ public class FinalProjectANDRES_L {
 					       break;
 					}System.out.println("================================================================");
 					
-					System.out.println("do you want to stay in this group? Y/N");
+					System.out.println("do you want to leave [Control Structure]? Y/N");
+					System.out.println("Press Y to Leave");
+					System.out.println("Press N to Stay");
 					loop2 = input.next() .toUpperCase();
-				}while(loop2.equals("Y"));
+				}while(loop2.equals("N"));
 					
 					break;
 				case 5:
 					do {
-					int options5;
+					String options5;
 					System.out.println(" ");
 					System.out.println("Control Structure (Switch)");
 					System.out.println(" ");
-					System.out.println("Please select");
-					System.out.println("1------- ElectricBill");
-					System.out.println("2------- DressCode");
-					System.out.println("3------- CarRental");
-					System.out.println("4------- Rock");
-					System.out.print("Enter selected number: ");
-					options5 = input.nextInt();	
+					System.out.println("Please select letter");
+					System.out.println(" ");
+					System.out.println("[A]-------> ElectricBill");
+					System.out.println("[B]-------> DressCode");
+					System.out.println("[C]-------> CarRental");
+					System.out.println("[D]-------> Rock");
+					System.out.println("[E]-------> Return to other groups");
+					System.out.print("Enter letter: ");
+					options5 = input.next().toUpperCase();	
 					switch(options5){
 					
-					case 1:
+					case "A":
 						double kilo;
 						double prev = 0, pres = 0;
 						int choice;
@@ -582,11 +600,11 @@ public class FinalProjectANDRES_L {
 							break;
 							}
 						System.out.println(" ");
-						System.out.print("Amount Due: " + amount);
+						System.out.println("Amount Due: " + amount);
 						 
 					break;
 					
-					case 2:
+					case "B":
 						System.out.println(" ");
 						System.out.println("DressCode");
 						System.out.println(" ");
@@ -639,7 +657,7 @@ public class FinalProjectANDRES_L {
 
 						break;
 						
-					case 3:
+					case "C":
 						
 						int typeofCar;
 						int numdays;
@@ -693,7 +711,7 @@ public class FinalProjectANDRES_L {
 						System.out.print("Total Bill: " + totalCost);
 					break;
 					
-					case 4:
+					case "D":
 						Random rndm = new Random ();
 						String play;
 						String pcPlay = null;
@@ -761,6 +779,10 @@ public class FinalProjectANDRES_L {
 						}
 						break;
 						
+					case "E":
+						
+						break;
+						
 					default:
 						System.out.println("Invalid");
 					       break;
@@ -768,33 +790,36 @@ public class FinalProjectANDRES_L {
 					       
 					}System.out.println("================================================================");
 					
-					System.out.println("do you want to stay in this group? Y/N");
+					System.out.println("do you want to leave [Control Structure (Switch)]? Y/N");
+					System.out.println("Press Y to Leave");
+					System.out.println("Press N to Stay");
 					loop2 = input.next() .toUpperCase();
-				}while(loop2.equals("Y"));
+				}while(loop2.equals("N"));
 					break;
 			
 					
 				case 6:
-do { 
-						int options6;
+					do { 
+						String options6;
 						System.out.println(" ");
 						System.out.println("Repetition ");
 						System.out.println(" ");
-						System.out.println("Please select");
+						System.out.println("Please select letter");
 						System.out.println(" ");
-						System.out.println("1------- Loop1");
-						System.out.println("2------- Loop2");
-						System.out.println("3------- Loop3");
-						System.out.println("4------- Loop4");
-						System.out.println("5------- UlamSequence");
-						System.out.println("6------- NandM");
-						System.out.println("7------- Remainders");
-						System.out.println("8------- Stars");
+						System.out.println("[A]-------> Loop1");
+						System.out.println("[B]-------> Loop2");
+						System.out.println("[C]-------> Loop3");
+						System.out.println("[D]-------> Loop4");
+						System.out.println("[E]-------> UlamSequence");
+						System.out.println("[F]-------> NandM");
+						System.out.println("[G]-------> Remainders");
+						System.out.println("[H]-------> Stars");
+						System.out.println("[I]-------> Return to other groups");
 						System.out.print("Enter selected number: ");
-						options6 = input.nextInt();	
+						options6 = input.next(). toUpperCase();	
 						switch(options6){
 						
-						case 1:
+						case "A":
 					
 							int a;
 							int b = 1;
@@ -818,7 +843,7 @@ do {
 											
 						break;
 						
-						case 2:
+						case "B":
 							int a1 = 0;
 							
 							
@@ -841,7 +866,7 @@ do {
 							
 							break;
 							
-						case 3:
+						case "C":
 							int a11;
 							int b1 = 2;
 							do {	
@@ -865,7 +890,7 @@ do {
 
 							break;
 						
-						case 4:
+						case "D":
 							int a3;
 							int b3 = 1;
 							do {	
@@ -888,7 +913,7 @@ do {
 							}while(loop.equals("Y"));
 							break;
 						
-						case 5:
+						case "E":
 							int n;
 							System.out.println(" ");
 							System.out.println("UlamSequence");
@@ -919,7 +944,7 @@ do {
 								}while(loop.equals("Y"));
 							break;
 						
-						case 6:
+						case "F":
 							int num1;
 							int num2;
 							int i;
@@ -951,7 +976,7 @@ do {
 							}while(loop.equals("Y"));
 							break;
 							
-						case 7:
+						case "G":
 							System.out.println(" ");
 							System.out.println("Remainders");
 							System.out.println(" ");
@@ -976,7 +1001,7 @@ do {
 									
 							break;
 							
-						case 8:
+						case "H":
 							System.out.println(" ");
 							System.out.println("Stars");
 							System.out.println(" ");
@@ -1028,29 +1053,77 @@ do {
 								}					
 							
 							break;
+							
+						case "I":
+							
+							break;
 
 						default:
 							System.out.println("Invalid");
 						
 						       break;
+						       
+						       
 						}System.out.println("================================================================");
 						
-						System.out.println("do you want to stay in this group? Y/N");
+						System.out.println("do you want to leave [Repition Control Structure]? Y/N");
+						System.out.println("Press Y to Leave");
+						System.out.println("Press N to Stay");
 						loop2 = input.next() .toUpperCase();
-					}while(loop2.equals("Y"));
-
+					}while(loop2.equals("N"));
+					break;
+					
+					
+					
+					
+					
+				case 7:
+					
+					System.out.println("Do you want to quit?");
+					System.out.println("Press Y if Yes");
+					System.out.println("Press N to Continue to other groups");
+					loop = input.next().toUpperCase();
+					if(loop.equals("Y")) {
+						String exit;
+						System.out.println("Are you sure do you want to quit?");
+						System.out.println("Press Y to Quit");
+						System.out.println("Press N to Continue to other groups");
+						exit = input.next().toUpperCase();
+						if(exit.equals("Y")) {
+							System.out.print("Thank you, " + name);
+							System.exit(0);
+						}
+						else if(exit.equals("N")) {
+							System.out.println("You pressed Continue to other groups");
+						}
+					}
+					else if(loop.equals("N")) {
+						System.out.println("You pressed Continue to other groups");
+					}
+					else {
+						System.out.println("Invalid");
+					}
 			
-						break;
+				break;
 				
 					}
 				System.out.println("================================================================");
-				System.out.println("do you want to proceed to other groups?");
-				System.out.println("Press Y to continue");
+				System.out.println("do you want to Continue to other groups?");
+				System.out.println("Press Y to Continue");
+				System.out.println("Press N to Quit");
 				loop = input.next() .toUpperCase();
 				
 			
 				if(loop.equals("N")) {
-					System.out.print("Thank you!");
+					String exit;
+					System.out.println("================================================================");
+					System.out.print("Are you sure do you want to quit?");
+					exit = input.next().toUpperCase();
+					if(exit.equals("Y")) {
+						System.out.print("Thank you, " + name);
+						System.exit(0);
+					}
+					
 				}
 				
 			}while(loop.equals("Y"));
